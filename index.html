@@ -1,12 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .manrope-font{
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        brown: '#737373',
+                        green: '#ABEF5F',
+                        lightgreen: 'rgba(171, 239, 95, 0.2)',
+                        black: '#1C1C1C',
+                    },
+                },
+            },
+        }
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
-    <h1>Hello</h1>
-    <p>check</p>
+
+<body class="manrope-font">
+    <header class="px-4 md:px-20 lg:px-52 bg-gradient-to-r from-white to-gray-100">
+        <nav>
+            <div class="navbar bg-base-100 bg-inherit">
+                <div class="navbar-start">
+                    <div class="rounded-full bg-green p-3"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg>
+                      </div>
+                    <div><a class="text-3xl font-extrabold ml-2">Rinterio</a></div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-extrabold">Home</a></li>
+                    <li><a class="text-brown">Services</a></li>
+                    <li><a class="text-brown">Portfolio</a></li>
+                    <li><a class="text-brown">Blogs</a></li>
+                    <li><a class="text-brown">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end space-x-4 hidden md:flex">
+                    <div class="btn rounded-full bg-white px-3 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                          </svg>                          
+                    </div>
+                    <div class="btn rounded-full bg-white px-3 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>                          
+                    </div>
+                    <div class="btn flex bg-green rounded-full hidden md:flex">
+                        <div><a class="bg-inherit">Book Consult</a></div>
+                        <div class=" rounded-full px-3 bg-black p-3 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-4 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="ml-56 md:ml-4 lg:hidden">
+                    <div class="btn rounded-full bg-white px-3 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>                                                       
+                    </div>
+                </div>
+              </div>
+        </nav>
+
+
+    </header>
+
+
+
+
+    <main></main>
+
+    <footer></footer>
 </body>
 </html>
