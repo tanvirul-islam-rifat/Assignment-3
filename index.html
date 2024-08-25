@@ -14,6 +14,15 @@
             font-weight: 400;
             font-style: normal;
             }
+        .fade-out {
+            transition: opacity 1s ease-out;
+            }
+        .fade-in {
+            transition: opacity 0.8s ease-out;
+            } 
+        .transition-bottom {
+            transition: bottom 0.5s ease-in-out;
+            }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -36,7 +45,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body class="manrope-font bg-gradient-to-r from-white to-gray-100">
+<body class="manrope-font bg-gradient-to-r from-white to-gray-200">
     <header class="px-8 md:px-20 lg:px-52">
         <nav>
             <div class="navbar bg-base-100 bg-inherit">
@@ -235,7 +244,7 @@
                 <p class="para lg:w-1/2 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
             <div class="grid gap-3 md:grid-cols-2 lg:grid-cols-9">
-                <div class="md:flex rounded-2xl border p-4 md:col-span-2 lg:col-span-6">
+                <div class="md:flex rounded-2xl bg-white border p-4 md:col-span-2 lg:col-span-6">
                     <div class="md:w-3/4"><img src="assets/img1.png" alt="" class="w-full h-full"></div>
                     <div class="p-4 space-y-6">
                         <h1 class="font-extrabold text-2xl">Commercial</h1>
@@ -249,16 +258,16 @@
                         </button>
                     </div>
                 </div>
-                <div class="border rounded-2xl lg:col-span-3 p-4">
+                <div class="border bg-white rounded-2xl lg:col-span-3 p-4">
                     <img src="assets/img2.png" alt="" class="w-full h-full">
                 </div>
-                <div class="border rounded-2xl p-4 lg:hidden sm:hidden md:block">
+                <div class="border bg-white rounded-2xl p-4 lg:hidden sm:hidden md:block">
                     <img src="assets/img5.png" alt="" class="w-full">
                 </div>
-                <div class="border rounded-2xl p-4 hidden lg:block lg:col-span-2">
+                <div class="border rounded-2xl bg-white p-4 hidden lg:block lg:col-span-2">
                     <img src="assets/img3.png" alt="" class="w-full">
                 </div>
-                <div class="p-4 rounded-2xl md:flex border md:col-span-2 lg:col-span-5">
+                <div class="p-4 rounded-2xl md:flex border bg-white md:col-span-2 lg:col-span-5">
                     <div class="md:w-2/4"><img src="assets/img4.png" alt="" class="w-full h-full"></div>
                     <div class="p-4 space-y-6">
                         <h1 class="font-extrabold text-2xl">Commercial</h1>
@@ -272,10 +281,10 @@
                         </button>
                     </div>
                 </div>
-                <div class="border rounded-2xl p-4 lg:hidden">
+                <div class="border rounded-2xl bg-white p-4 lg:hidden">
                     <img src="assets/img3.png" alt="" class="w-full">
                 </div>
-                <div class="border rounded-2xl p-4 lg:col-span-2">
+                <div class="border rounded-2xl bg-white p-4 lg:col-span-2">
                     <img src="assets/img5.png" alt="" class="w-full">
                 </div>
             </div>
@@ -381,6 +390,66 @@
                             </svg>
                             </div>
                         </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16" >
+            <video autoplay loop muted plays-inline class="absolute z-1">
+                <source src="assets/bg-video.mp4" type="video/mp4">
+            </video>
+            <div class="px-8 py-24 space-y-48 md:px-20 relative lg:px-52">
+                <div class="text-gray-200">
+                    <div class="space-y-6 mb-8 text-center">
+                        <h1 class="font-extrabold text-4xl">Latest Projects</h1>
+                        <p class="para lg:w-1/2 mx-auto">Explore our recent projects, showcasing innovative solutions and creative designs that reflect our commitment to excellence and quality.</p>
+                    </div>
+                </div>
+                <div class="grid justify-center lg:grid-cols-4 md:grid-cols-2 text-white gap-10">
+                    <div class=" group relative hover:text-black lg:hover:text-white ">
+                        <div class="group-hover:border rounded-md"><img src="assets/Project-1.jpg" alt="" class="rounded-md z-10 fade-out group-hover:opacity-0"></div>
+                        <div class="pl-8 absolute bottom-14 transition-bottom group-hover:bottom-64"><h1 class="font-extrabold text-2xl">Triangle<br>Concrete House<br>On Lake</h1><br></div>
+                        <div class="fade-in opacity-0 group-hover:opacity-100 absolute pl-8 bottom-36"><p></p>The Triangle Concrete House gracefully blends with its lakeside setting, featuring a striking geometric design and durable concrete construction.</p></div>
+                        <div class="pl-8 bottom-6 absolute"><button class="flex space-x-2">
+                            <div><a class="font-semibold text-lg">See Project</a></div>
+                            <div class=" rounded-full p-1 bg-green "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-3.5 text-black">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg></div>
+                        </button></div>
+                    </div>
+                    <div class=" group relative hover:text-black lg:hover:text-white ">
+                        <div class="group-hover:border rounded-md"><img src="assets/Project-2.jpg" alt="" class="rounded-md z-10 fade-out group-hover:opacity-0"></div>
+                        <div class="pl-8 absolute bottom-14 transition-bottom group-hover:bottom-64"><h1 class="font-extrabold text-2xl">Milko<br>Co-Working<br>Building</h1><br></div>
+                        <div class="fade-in opacity-0 group-hover:opacity-100 absolute pl-8 bottom-32"><p></p>The Milko Co-Working Building features modern, flexible workspaces designed for collaboration, innovation, and productivity in a dynamic environment.</p></div>
+                        <div class="pl-8 bottom-6 absolute"><button class="flex space-x-2">
+                            <div><a class="font-semibold text-lg">See Project</a></div>
+                            <div class=" rounded-full p-1 bg-green "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-3.5 text-black">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg></div>
+                        </button></div>
+                    </div>
+                    <div class=" group relative hover:text-black lg:hover:text-white">
+                        <div class="group-hover:border rounded-md"><img src="assets/Project-3.jpg" alt="" class="rounded-md z-10 fade-out group-hover:opacity-0"></div>
+                        <div class="pl-8 absolute bottom-14 transition-bottom group-hover:bottom-64"><h1 class="font-extrabold text-2xl">Bellecomde<br>Holiday<br>Residence</h1><br></div>
+                        <div class="fade-in opacity-0 group-hover:opacity-100 absolute pl-8 bottom-36"><p></p>Bellecomde Holiday Residence offers luxurious accommodations with stunning views, combining comfort and elegance for an unforgettable vacation experience.</p></div>
+                        <div class="pl-8 bottom-6 absolute"><button class="flex space-x-2">
+                            <div><a class="font-semibold text-lg">See Project</a></div>
+                            <div class=" rounded-full p-1 bg-green "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-3.5 text-black">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg></div>
+                        </button></div>
+                    </div>
+                    <div class=" group relative hover:text-black lg:hover:text-white">
+                        <div class="group-hover:border rounded-md"><img src="assets/Project-4.jpg" alt="" class="rounded-md z-10 fade-out group-hover:opacity-0"></div>
+                        <div class="pl-8 absolute bottom-14 transition-bottom group-hover:bottom-64"><h1 class="font-extrabold text-2xl">Cubic<br>Inter Museum<br>In Rome</h1><br></div>
+                        <div class="fade-in opacity-0 group-hover:opacity-100 absolute pl-8 bottom-32"><p></p>Cubic Inter Museum in Rome features innovative, geometric designs and dynamic exhibitions, offering a unique cultural experience at the intersection of art and technology.</p></div>
+                        <div class="pl-8 bottom-6 absolute"><button class="flex space-x-2">
+                            <div><a class="font-semibold text-lg">See Project</a></div>
+                            <div class=" rounded-full p-1 bg-green "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-3.5 text-black">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg></div>
+                        </button></div>
                     </div>
                 </div>
             </div>
